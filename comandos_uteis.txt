@@ -1,0 +1,11 @@
+Executar apenas testes smoke: pytest -m smoke
+
+Executar apenas testes de api: pytest -m api
+
+Executar testes de api e smoke: pytest -m "api or smoke"
+
+Executar todos os testes que não são slow: pytest -m "not slow"
+
+Ver todos os markers registrados: pytest --markers
+
+Coletar apenas os testes sem executar: pytest --collect-only
