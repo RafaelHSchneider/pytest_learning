@@ -9,3 +9,18 @@ Executar todos os testes que não são slow: pytest -m "not slow"
 Ver todos os markers registrados: pytest --markers
 
 Coletar apenas os testes sem executar: pytest --collect-only
+
+
+
+Filtrar por parte do nome (-k):
+
+Executa todos os testes cujo nome contém "login": pytest -k login
+
+Executar testes que contenham "login" ou "logout": pytest -k "login or logout"
+
+Executar apenas smoke que contenham "login": pytest -m smoke -k login
+
+
+
+Executar o último teste que falhou: pytest --lf
+Executar apenas os testes que falharam anteriormente: pytest --ff
